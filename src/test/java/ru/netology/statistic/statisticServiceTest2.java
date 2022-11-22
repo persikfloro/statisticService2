@@ -1,7 +1,8 @@
 package ru.netology.statistic;
+
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class statisticServiceTest2 {
     @Test
@@ -15,27 +16,4 @@ public class statisticServiceTest2 {
 
         assertEquals(expected, actual);
     }
-    @Test
-    void findMaxIf() {
-        statisticService2 service = new statisticService2();
-
-        long[] incomes = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
-        long expected = 11;
-
-        long actual = service.findMax(incomes);
-
-        assertEquals(expected, actual);
-    }
-    @Test
-    void findMaxForOne() {
-        statisticService2 service = new statisticService2();
-
-        long[] incomes = {2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2};
-        long expected = 2;
-
-        long actual = service.findMax(incomes);
-
-        assertEquals(expected, actual);
-    }
-
 }
